@@ -1,0 +1,55 @@
+body {
+    background-color: #1e1e1e;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'DM Sans', sans-serif;
+    padding: 40px;
+    width: 100vw; 
+    height: 100vh;  
+}
+
+.reviews {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 блока в ряд */
+    gap: 30px; 
+    width: 100%;
+    max-width: 1200px; 
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.box {
+    width: 423px;
+    height: 364px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 32px;
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+}
+
+.box::before {
+    content: '⭐⭐⭐⭐⭐';
+    font-size: 24px;
+    color: #FFD700;
+    margin-bottom: 10px;
+    display: block;
+}
+
+  h1 {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 43.2px;
+    letter-spacing: 0;
+  } 
+
+  p {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28.8px;
+    letter-spacing: 0;
+  } 

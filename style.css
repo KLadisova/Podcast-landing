@@ -10,10 +10,10 @@ body {
   height: 100vh;
 }
 
-.star {
+/* .star {
   margin-bottom: 15px;
   margin-left: 20px;
-}
+} */
 
 .reviews {
   display: grid;
@@ -23,6 +23,7 @@ body {
   width: 100%;
   padding: 20px;
   box-sizing: border-box;
+  align-items: start;
 }
 
 .box {
@@ -64,7 +65,7 @@ h1 {
   font-size: 36px;
   line-height: 43.2px;
   margin: 0 0 10px;
-  margin-left: 20px;
+  /* margin-left: 20px; */
 }
 /* h1 {
   font-weight: 400;
@@ -78,7 +79,7 @@ p {
   font-size: 24px;
   line-height: 28.8px;
   margin: 0;
-  margin-left: 20px;
+  /* margin-left: 20px; */
 }
 /* p {
   font-weight: 400;

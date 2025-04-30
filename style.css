@@ -9,6 +9,8 @@ body {
   background-color: #1e1e1e;
   height: 100vh;
   font-weight: 400;
+  /* height: 5990px;
+  width: 1440px; */
   width: fit-content;
 }
 
@@ -21,7 +23,9 @@ body {
   grid-template-columns: repeat(3, 1fr);
   justify-content: center;
   gap: 30px;
-  width: 100%;
+  /* width: 100%; */
+  width: 1440px;
+  height: 901px;
   padding: 20px;
   box-sizing: border-box;
   align-items: start;
@@ -93,6 +97,8 @@ header {
   padding: 40px;
   width: fit-content;
   max-width: 100%;
+  /* Width: 1440px;
+Height: 2088px; */
   margin: 0 auto;
 }
 

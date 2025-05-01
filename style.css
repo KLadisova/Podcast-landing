@@ -11,7 +11,6 @@ body {
   font-weight: 400;
   /* height: 5990px;
   width: 1440px; */
-  width: fit-content;
 }
 
 .star {
@@ -23,8 +22,8 @@ body {
   grid-template-columns: repeat(3, 1fr);
   justify-content: center;
   gap: 30px;
-  /* width: 100%; */
-  width: 1440px;
+  width: 100%;
+  max-width: 1440px;
   height: 901px;
   padding: 20px;
   box-sizing: border-box;
@@ -78,7 +77,8 @@ header {
 
 .episode-one,
 .episode-two,
-.episode-three {
+.episode-three,
+.subscribe-block {
   display: flex;
   gap: 30px;
   background-color: #000;
@@ -102,7 +102,8 @@ Height: 2088px; */
   margin: 0 auto;
 }
 
-.ep-info {
+.ep-info,
+.subscribe-header {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -119,7 +120,6 @@ Height: 2088px; */
   background-color: #118da8;
   border-radius: 15px;
   height: 75px;
-  border-radius: 15px;
   font-size: 25px;
   width: 30%;
 }
@@ -148,7 +148,8 @@ Height: 2088px; */
   font-size: 25px;
 }
 .ep-subheading,
-.host-Jacob {
+.host-Jacob,
+.subscribe-header {
   font-size: 64px;
   line-height: 70.4px;
 }
@@ -166,7 +167,8 @@ Height: 2088px; */
 button,
 .blueTextMini,
 .host-Jacob,
-.host-bio {
+.host-bio,
+.subscribe-header {
   margin: 0;
 }
 
@@ -197,11 +199,11 @@ button,
 }
 
 .blue-circle {
-  background-color: #118DA8;
+  background-color: #118da8;
   width: 112px;
   height: 112px;
   border-radius: 50%;
-  display: flex; 
+  display: flex;
   align-items: center;
   justify-content: center;
 }
@@ -211,4 +213,45 @@ button,
   height: 60px;
   width: 60px;
   object-fit: contain;
+}
+
+.subscribe-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.subscribe-block {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  gap: 40px;
+  padding: 40px;
+  width: 100%;
+  margin: 40px;
+}
+.subscribe-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+input {
+  background-color: #191919;
+  border-radius: 5px;
+  width: 300px;
+  height: 50px;
+}
+
+#name,
+#email {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+  padding: 5px 10px;
 }

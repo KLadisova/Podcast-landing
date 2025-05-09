@@ -28,7 +28,7 @@ body {
   padding: 20px;
   box-sizing: border-box;
   align-items: start;
-  margin-left: 40px;
+  margin: 0 auto;
 }
 
 .box {

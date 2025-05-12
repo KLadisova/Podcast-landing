@@ -266,11 +266,11 @@ input::placeholder {
   display: flex;
   align-items: flex-start;
   box-sizing: border-box;
-  justify-content:center;
+  justify-content:space-between;
   max-width: 1300px;
   width: 100%;
   margin: 50px auto;
-  gap: 16px;
+  /* gap: 16px; */
 }
 
 .navigation,
@@ -285,5 +285,24 @@ input::placeholder {
   line-height: 9.98px;
 }
 
-.legal-links {
+.logo-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  gap: 20px;
+}
+
+.socialnetwork {
+  display: flex;
+  gap: 10px;
+}
+
+.streaming-platforms {
+  align-items: center;
+  width: max-content;
+}
+
+.streaming-platforms-info {
+  
 }

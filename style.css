@@ -145,7 +145,6 @@ header {
 .blueTextMini {
   color: #118da8;
   font-size: 18px;
-
 }
 
 .subscribe-header,
@@ -153,8 +152,6 @@ header {
 .host-jacob {
   font-size: 64px;
   line-height: 70.4px;
-
-
 }
 
 .ep-discription,
@@ -225,7 +222,6 @@ button,
   gap: 20px;
   opacity: 70%;
   justify-content: center;
-  
 }
 
 .subscribe-block {
@@ -243,8 +239,6 @@ button,
   display: flex;
   flex-direction: column;
   gap: 6px;
-
-
 }
 
 input {
@@ -266,4 +260,30 @@ input {
 input::placeholder {
   color: rgba(255, 255, 255, 0.7);
   padding: 5px 10px;
+}
+
+.footer {
+  display: flex;
+  align-items: flex-start;
+  box-sizing: border-box;
+  justify-content:center;
+  max-width: 1300px;
+  width: 100%;
+  margin: 50px auto;
+  gap: 16px;
+}
+
+.navigation,
+.legal-links {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 9.98px;
+}
+
+.legal-links {
 }

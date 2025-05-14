@@ -194,8 +194,8 @@ button,
   font-weight: 400;
 }
 
-.jacob-img {
-  width: 100%;
+.jacob-img,
+.logo-img {
   max-width: 650px;
   border-radius: 12px;
 }
@@ -267,11 +267,11 @@ input::placeholder {
   display: flex;
   align-items: flex-start;
   box-sizing: border-box;
-  justify-content:space-between;
+  justify-content: space-between;
   max-width: 1300px;
   width: 100%;
   margin: 50px auto;
-    padding-top: 50px;
+  padding-top: 50px;
   /* gap: 16px; */
 }
 
@@ -305,12 +305,11 @@ input::placeholder {
   width: max-content;
 }
 
-
 .header {
   display: flex;
   align-items: flex-start;
   box-sizing: border-box;
-  justify-content:space-between;
+  justify-content: space-between;
   max-width: 1300px;
   width: 100%;
   margin: 50px auto;
@@ -323,3 +322,45 @@ input::placeholder {
   line-height: 27px;
   gap: 40px;
 }
+
+.intro {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  justify-content: space-between;
+  gap: 60px;
+  max-width: 1300px;
+  width: 100%;
+  margin: 50px auto;
+}
+
+.intro-info {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+  font-weight: 300;
+  font-size: 65px;
+ line-height: 88px;
+ letter-spacing: 3.2px;
+
+}
+
+.streaming-intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 9.98px;
+}
+
+.level {
+ font-weight: 700;
+ font-size: 80px;
+line-height: 88px;
+letter-spacing: 3.2px;
+}
+

@@ -142,7 +142,8 @@ header {
   object-fit: cover;
 }
 .ep-number,
-.blueTextMini {
+.blueTextMini,
+.blue-text {
   color: #118da8;
   font-size: 18px;
 }
@@ -270,6 +271,7 @@ input::placeholder {
   max-width: 1300px;
   width: 100%;
   margin: 50px auto;
+    padding-top: 50px;
   /* gap: 16px; */
 }
 
@@ -303,6 +305,21 @@ input::placeholder {
   width: max-content;
 }
 
-.streaming-platforms-info {
-  
+
+.header {
+  display: flex;
+  align-items: flex-start;
+  box-sizing: border-box;
+  justify-content:space-between;
+  max-width: 1300px;
+  width: 100%;
+  margin: 50px auto;
+}
+
+.container {
+  display: flex;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  gap: 40px;
 }

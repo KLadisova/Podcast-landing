@@ -287,6 +287,16 @@ input::placeholder {
   line-height: 9.98px;
 }
 
+.footer-link {
+  color: #fff;
+  text-decoration: none;
+  margin: 17px 0;
+}
+
+.footer-link:hover {
+  color: #118da8;
+}
+
 .logo-section {
   display: flex;
   flex-direction: column;
@@ -334,6 +344,16 @@ input::placeholder {
   margin: 50px auto;
 }
 
+.intro-logo-img-container {
+  position: relative;
+}
+
+.logo-decoration-img {
+  position: absolute;
+  top: -26px;
+  left: -26px;
+}
+
 .intro-info {
   color: #fff;
   display: flex;
@@ -344,7 +364,10 @@ input::placeholder {
   font-size: 65px;
  line-height: 88px;
  letter-spacing: 3.2px;
+}
 
+.intro-info-header {
+  font-weight: 400;
 }
 
 .streaming-intro {

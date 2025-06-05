@@ -2,7 +2,7 @@ body {
   box-sizing: border-box;
   margin: 0 auto;
   padding: 0 15px;
-  font-family: 'DM Sans', sans-serif;
+  font-family: "DM Sans", sans-serif;
   background-color: #1e1e1e;
   font-weight: 400;
 }
@@ -298,7 +298,7 @@ input {
 
 #name,
 #email {
-  font-family: 'DM Sans', sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-weight: 400;
   font-size: 24px;
 }
@@ -432,18 +432,66 @@ input::placeholder {
 }
 
 @media (max-width: 1024px) {
+ 
   .intro {
+    display: flex;
     flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
   }
 
   .logo-img {
     max-width: 450px;
   }
+  .hosting {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .episodes {
+    display: flex;
+    flex-direction: column;
+  }
+  .episode-one {
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    gap: 0;
+    align-items:  center;
+    box-sizing: border-box;
+  }
+  .episode-two {
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    gap: 0;
+    align-items: center;
+    box-sizing: border-box;
+  }
+  .episode-three {
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    gap: 0;
+    align-items: center;
+    box-sizing: border-box;
+  }
+  .ep-jpg {
+    max-width: 450px;
+  }
+  .jacob-img {
+    max-width: 450px;
+  }
+
+  .subscribe-block {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .streaming-intro {
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
   justify-content: center;
   box-sizing: border-box;
   font-weight: 400;
@@ -465,4 +513,9 @@ input::placeholder {
 
 html {
   scroll-behavior: smooth;
+}
+.listen-on {
+  display: flex;
+  flex-direction: row;
+  gap: 17px;
 }

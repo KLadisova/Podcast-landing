@@ -7,7 +7,7 @@ body {
   font-weight: 400;
 }
 
-button {
+button, a {
   cursor: pointer;
   border: 0;
 }
@@ -431,8 +431,8 @@ input::placeholder {
   border-radius: 12px;
 }
 
-@media (max-width: 1024px) {
- 
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* планшеты, небольшие экраны */
   .intro {
     display: flex;
     flex-direction: column;
@@ -455,15 +455,15 @@ input::placeholder {
   .episode-one {
     display: flex;
     flex-direction: column;
-    background-color: transparent;
+
     gap: 0;
-    align-items:  center;
+    align-items: center;
     box-sizing: border-box;
   }
   .episode-two {
     display: flex;
     flex-direction: column;
-    background-color: transparent;
+
     gap: 0;
     align-items: center;
     box-sizing: border-box;
@@ -471,13 +471,13 @@ input::placeholder {
   .episode-three {
     display: flex;
     flex-direction: column;
-    background-color: transparent;
     gap: 0;
     align-items: center;
     box-sizing: border-box;
   }
   .ep-jpg {
     max-width: 450px;
+    border-radius: 16px;
   }
   .jacob-img {
     max-width: 450px;
@@ -486,6 +486,96 @@ input::placeholder {
   .subscribe-block {
     display: flex;
     flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 767px) {
+  /* Стили для мобильных телефонов */
+.header-container{
+  background-color:#1e1e1e;
+  width: 767px;
+  gap: 20px;
+}
+  .intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    width: 767px;
+  }
+  .streaming-intro-p {
+    font-size: 25px;
+  }
+
+  .logo-img {
+    max-width: 450px;
+  }
+  .hosting {
+    display: flex;
+    flex-direction: column;
+    width: 767px;
+  }
+
+  .episodes {
+    display: flex;
+    flex-direction: column;
+    width: 767px;
+  }
+  .episode-one {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    align-items: center;
+    box-sizing: border-box;
+    width: 767px;
+  }
+  .episode-two {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    align-items: center;
+    box-sizing: border-box;
+    width: 767px;
+  }
+  .episode-three {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    align-items: center;
+    box-sizing: border-box;
+    width: 767px;
+  }
+  .subscribe-block {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 767px;
+  }
+  .jacob-img {
+    max-width: 450px;
+  }
+  .ep-number {
+    font-size: 30px;
+  }
+  .btn-grey {
+    font-size: 25px;
+  }
+  .ep-discription {
+    font-size: 30px;
+  }
+  .btn-blue {
+    font-size: 25px;
+    width: fit-content;
+  }
+  .blueTextMini {
+    font-size: 25px;
+  }
+  .footer {
+    gap: 20px;
+  }
+  #jpg {
+    border-radius: 20px;
   }
 }
 

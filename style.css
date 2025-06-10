@@ -7,7 +7,8 @@ body {
   font-weight: 400;
 }
 
-button, a {
+button,
+a {
   cursor: pointer;
   border: 0;
 }
@@ -431,8 +432,11 @@ input::placeholder {
   border-radius: 12px;
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (max-width: 1024px) {
   /* планшеты, небольшие экраны */
+  body {
+    padding: 50px;
+  }
   .intro {
     display: flex;
     flex-direction: column;
@@ -488,21 +492,29 @@ input::placeholder {
     flex-direction: column;
     text-align: center;
   }
-}
-
-@media (max-width: 767px) {
-  /* Стили для мобильных телефонов */
-.header-container{
-  background-color:#1e1e1e;
-  width: 767px;
-  gap: 20px;
-}
-  .intro {
-    display: flex;
+  .reviews {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .footer {
     flex-direction: column;
     align-items: center;
-    margin: 0 auto;
-    width: 767px;
+  }
+  .logo-section {
+    align-items: center;
+  }
+  .navigation,
+  .legal-links {
+    text-align: center;
+  }
+  .header-container {
+    display: none;
+  }
+  .socialnetwork {
+    margin-left: 350px; /* КАК ПОДВИНУТЬ ИНАЧЕ??? */
+  }
+
+  @media (max-width: 767px) {
+    /* Стили для мобильных телефонов */
   }
   .streaming-intro-p {
     font-size: 25px;
@@ -511,47 +523,14 @@ input::placeholder {
   .logo-img {
     max-width: 450px;
   }
-  .hosting {
-    display: flex;
-    flex-direction: column;
-    width: 767px;
-  }
 
-  .episodes {
-    display: flex;
-    flex-direction: column;
-    width: 767px;
-  }
   .episode-one {
-    display: flex;
-    flex-direction: column;
-    gap: 0;
     align-items: center;
-    box-sizing: border-box;
-    width: 767px;
   }
   .episode-two {
-    display: flex;
-    flex-direction: column;
-    gap: 0;
     align-items: center;
-    box-sizing: border-box;
-    width: 767px;
   }
-  .episode-three {
-    display: flex;
-    flex-direction: column;
-    gap: 0;
-    align-items: center;
-    box-sizing: border-box;
-    width: 767px;
-  }
-  .subscribe-block {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    width: 767px;
-  }
+
   .jacob-img {
     max-width: 450px;
   }
@@ -567,6 +546,7 @@ input::placeholder {
   .btn-blue {
     font-size: 25px;
     width: fit-content;
+    /* КАК ПОДВИНУТЬ В СЕРЕДИНУ??? */
   }
   .blueTextMini {
     font-size: 25px;
@@ -577,35 +557,39 @@ input::placeholder {
   #jpg {
     border-radius: 20px;
   }
-}
 
-.streaming-intro {
-  /* display: flex;
+  .streaming-intro {
+    /* display: flex;
   flex-direction: column; */
-  justify-content: center;
-  box-sizing: border-box;
-  font-weight: 400;
-  font-size: 17px;
-}
+    justify-content: center;
+    box-sizing: border-box;
+    font-weight: 400;
+    font-size: 17px;
+  }
 
-.level {
-  font-weight: 700;
-  font-size: 80px;
-  line-height: 88px;
-  letter-spacing: 3.2px;
-}
+  .level {
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 88px;
+    letter-spacing: 3.2px;
+  }
 
-.streaming-intro-img,
-.castaway-footer-img {
-  max-width: 50%;
-  height: auto;
-}
+  .streaming-intro-img,
+  .castaway-footer-img {
+    max-width: 50%;
+    height: auto;
+  }
 
-html {
-  scroll-behavior: smooth;
+  html {
+    scroll-behavior: smooth;
+  }
+  .listen-on {
+    display: flex;
+    flex-direction: row;
+    gap: 17px;
+  }
+  .reviews {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
-.listen-on {
-  display: flex;
-  flex-direction: row;
-  gap: 17px;
-}
+/* Почему оно все равно липнет влево??? на маленьком экране */

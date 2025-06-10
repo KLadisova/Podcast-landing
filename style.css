@@ -543,6 +543,9 @@ input::placeholder {
   .ep-discription {
     font-size: 30px;
   }
+  /* .ep-jpg{
+    max-width: 350px;   Надо ли менять размер картинки??? и почему если да, то она сразу меняет и на второе разрешение с 450 на 350
+  } */
   .btn-blue {
     font-size: 25px;
     width: fit-content;
